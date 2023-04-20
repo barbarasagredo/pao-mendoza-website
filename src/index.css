@@ -24,7 +24,7 @@ h2 {
   /* text-align: center; */
 }
 
-p, label, input, textarea, button {
+p, label, input, textarea, button,span {
   font-family: 'Open Sans', sans-serif;
   color: #282828;
 }
