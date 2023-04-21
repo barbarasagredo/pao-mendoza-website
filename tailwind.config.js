@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'gray-gray': '#D9D9D9',
         'text-strong': '#282828',
+        'back-gray': '#fafafa',
       },
       letterSpacing: {
         tightest: '-.075em',
