@@ -1,6 +1,8 @@
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const activeStyle = { color: ' #AAAAAA', fontWeight: 600 };
 
   const openMenu = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className='flex justify-between items-center fixed w-full h-12 px-4'>
       <div className='flex-grow'>
-        <img src='public/m-logo.svg' className='w-6 h-6' alt='mala logo' />
+        <img src='/m-logo.svg' className='w-6 h-6' alt='mala logo' />
       </div>
       <div
         id='menu'
@@ -26,6 +28,7 @@ const Navbar = () => {
             to='/'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='pl-4 pb-2 md:pb-0'
+            onClick={openMenu}
           >
             HOME
           </NavLink>
@@ -34,6 +37,7 @@ const Navbar = () => {
             to='/portafolio'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='md:pb-0'
+            onClick={openMenu}
           >
             PORTAFOLIO
           </NavLink>
@@ -42,6 +46,7 @@ const Navbar = () => {
             to='/resume'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='md:pb-0'
+            onClick={openMenu}
           >
             RESUME
           </NavLink>
@@ -50,6 +55,7 @@ const Navbar = () => {
             to='/about'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='md:pb-0'
+            onClick={openMenu}
           >
             ABOUT
           </NavLink>
@@ -58,6 +64,7 @@ const Navbar = () => {
             to='/contact'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='md:pb-0'
+            onClick={openMenu}
           >
             CONTACT
           </NavLink>
