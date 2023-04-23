@@ -15,20 +15,7 @@ const WorksCard = ({ image, alt, title, description, date, link }) => {
           </p>
           <div className='flex justify-center pt-2 invisible group-hover:visible'>
             <a href={link} target='_blank'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='16'
-                height='16'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='#282828'
-                strokeWidth='1.9'
-                strokeLinecap='butt'
-                strokeLinejoin='bevel'
-              >
-                <path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path>
-                <path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path>
-              </svg>{' '}
+              <img src='src/images/link.svg' alt='link icon' />
             </a>
           </div>
         </div>
@@ -36,3 +23,5 @@ const WorksCard = ({ image, alt, title, description, date, link }) => {
     </>
   );
 };
+
+export default WorksCard;

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const activeStyle = { color: ' #AAAAAA', fontWeight: 600 };
 
   const openMenu = () => {
@@ -71,21 +70,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className='flex md:hidden justify-end' onClick={openMenu}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='30'
-          height='30'
-          viewBox='0 0 24 24'
-          fill='none'
-          stroke='#626c7f'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        >
-          <line x1='3' y1='12' x2='21' y2='12'></line>
-          <line x1='3' y1='6' x2='21' y2='6'></line>
-          <line x1='3' y1='18' x2='21' y2='18'></line>
-        </svg>
+        <img src='src/images/burger.svg' alt='burger' />
       </div>
     </nav>
   );
