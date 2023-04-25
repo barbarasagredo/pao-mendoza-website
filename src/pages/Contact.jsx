@@ -26,13 +26,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className='flex flex-col items-center w-full min-h-screen pt-16'>
-        <div className='w-2/3 text-center space-y-2 pb-4'>
+      <div className='flex flex-col items-center w-full min-h-screen pt-20 pb-4 px-4'>
+        <div className='w-2/3 text-center pb-6'>
           <h2>CONTACT ME</h2>
-          <p className='text-sm'>
+          <p className='text-sm pt-6'>
             If you are interested in my work and want to know more about me or
-            my projects, you can find me in my social media or send me a
-            message. Let’s talk.
+            my projects, you can send me a message.
+            Let’s talk.
           </p>
         </div>
         <form ref={form} onSubmit={sendEmail} className='w-1/2'>
@@ -74,6 +74,10 @@ const Contact = () => {
         >
           Send
         </button>
+        <p className='text-sm pt-4 pb-2'>
+          Or you can take a look in my instagram profile
+        </p>
+        <img src='src\images\instagram.svg' alt='Instagram logo' />
       </div>
     </>
   );

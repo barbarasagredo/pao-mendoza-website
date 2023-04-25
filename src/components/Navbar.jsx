@@ -1,4 +1,5 @@
 import React from 'react';
+// import MyPDF from 'src/images/CVPM.pdf'
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex justify-between items-center fixed w-full h-12 px-4'>
+    <nav className='flex justify-between items-center fixed w-full h-12 px-4 bg-back-gray z-50'>
       <div className='flex-grow'>
         <img src='/m-logo.svg' className='w-6 h-6' alt='mala logo' />
       </div>
@@ -42,7 +43,8 @@ const Navbar = () => {
           </NavLink>
           <span className='md:visible invisible'>~</span>
           <NavLink
-            to='/resume'
+            to='src\images\CVPM.pdf'
+            target='_blank'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className='md:pb-0'
             onClick={openMenu}
